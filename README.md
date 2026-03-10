@@ -39,7 +39,7 @@ The layer-MAP helps with two main streams of data analyses:
 ## Philosophy of the pipeline
 
 1. Everyone is welcome to contribute.
-2. This is the only way to analyze layer fMRI data. It is one way of many, we just want to make it easier and faster.
+2. This is not the only way to analyze layer fMRI data. It is one way of many, we just want to make it easier and faster.
 3. If you have a different and cool way to tackle a particular step, please make it available for everyone adding it to this repo. 
 4. This pipeline is a transparent box. We keep it easy so that everyone can easily open the scripts and look at what is happening inside and contribute.
 5. Each called "function" has an input and an output and should do just one operation/step on the data.
