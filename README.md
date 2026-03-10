@@ -13,7 +13,7 @@ __________(_ / _____________________________________________
 ```
 
 
-# layer-MAP (Modular Anlaysis Pipeline) v0.1.0 - BETA*
+# layer-MAP (Modular Anlaysis Pipeline) v0.2.0 - BETA*
 
 *formerly known as layerfMRI - toolbox*
 
