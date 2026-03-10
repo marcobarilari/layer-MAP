@@ -1,22 +1,27 @@
 ```
-    _____________________________________________________________
-                                      _    _   _    ____       __
-        /                           /      /  /|    /    )     / 
-    ---/----__----------__---)__--_/__----/| /-|---/___ /-----/--
-      /   /   ) /   / /___) /   ) /      / |/  |  /    |     /    
-    _/___(___(_(___/_(___ _/_____/______/__/___|_/_____|__ _/_ __
-                  /                                              
-    __________(_ /_______________________________________________
+___________________________________________________________
+
+                                    _   _    __     ____  
+    /                                /  /|    / |    /    )
+---/----__----------__---)__--------/| /-|---/__|---/____/-
+  /   /   ) /   / /___) /   ) ===  / |/  |  /   |  /       
+_/___(___(_(___/_(___ _/__________/__/___|_/____|_/________
+              /
+
+__________(_ / _____________________________________________
+                                            
 ```
 
 
-# layerfMRI-toolbox v0.1.0 - BETA*
+# layer-MAP (Modular Anlaysis Pipeline) v0.1.0 - BETA*
+
+*formerly known as layerfMRI - toolbox*
 
 (*) new commits will break the code very often
 
-This is a bash/matlab/ctave toolbox to perform layerfMRI preprocessing analyses using wrapper functions for common MRI software analyses. There are examples of how to streamline a pipeline but it is also easy to plug in at any point your custom code for your analyses tailored to your specific project/data.
+This is a bash/matlab/ctave toolbox to perform structural preprocessing for layer (f)MRI analyses using wrapper functions for common MRI software analyses. There are examples of how to streamline a pipeline but it is also easy to plug in at any point your custom code for your analyses tailored to your specific project/data.
 
-The layerfMRI-toolbox helps with two main streams of data analyses:
+The layer-MAP helps with two main streams of data analyses:
 
 1. Tissue segmentation and layerification of anatomical data (MP2RAGE)
 
@@ -53,7 +58,7 @@ The layerfMRI-toolbox helps with two main streams of data analyses:
 - et al. ... if you think your name is missing, please do not hesitate to reach out
 
 ## TOC
-- [layerfMRI-toolbox v0.1.0 - BETA\*](#layerfmri-toolbox-v010---beta)
+- [layer-MAP v0.1.0 - BETA\*](#layer-MAP-v010---beta)
   - [Philosophy of the pipeline](#philosophy-of-the-pipeline)
   - [Contributors](#contributors)
   - [TOC](#toc)
@@ -97,10 +102,10 @@ Tested on Linux (Ubuntu 22.04.5 LTS) and Apple Intel (Monterey)/Silicon Mac
 
 ### Automatic by creating the ideal project folder structure (aka a [YODA folder](https://handbook.datalad.org/en/latest/basics/101-127-yoda.html)):
 
-Download [this script](https://github.com/marcobarilari/layerfMRI-toolbox/blob/main/src/utils/make_yoda_layerfMRI-toolbox.sh) and run it as follow:
+Download [this script](https://github.com/marcobarilari/layer-MAP/blob/main/src/utils/make_yoda_layer-MAP.sh) and run it as follow:
 
 ```bash
-bash path/to/make_yoda_layerfMRI-toolbox.sh \
+bash path/to/make_yoda_layer-MAP.sh \
   my_folder_project_name \
   where/I/want/to/create/it
 ```
@@ -112,8 +117,8 @@ This is the expected folder structure
 `analyses_layerfMRI_your-project-name`
     .
     ├── code
-    │   ├── lib # where layerfMRI-toolbox lives
-    │   ├── src # where your code and the batch file to run layerfMRI-toolbox live
+    │   ├── lib # where layer-MAP lives
+    │   ├── src # where your code and the batch file to run layer-MAP live
     ├── inputs
     │   └── raw # your awesome raw dataset + other input to not touch, ideally bidslike format
     └── outputs
@@ -122,7 +127,7 @@ This is the expected folder structure
 
 ### Cloning a template with ideal project folder structure (aka a YODA folder) and DATALAD:
 
-Use the GitHub template [template_layerfMRI-toolbox_yoda](https://github.com/marcobarilari/template_layerfMRI-toolbox_yoda), it has already this toolbox installed
+Use the GitHub template [template_layer-MAP_yoda](https://github.com/marcobarilari/template_layer-MAP_yoda), it has already this toolbox installed
 
 1. From the link above, click on `Use this template`, green button (up-right)
 2. Set your project/repo name
@@ -148,7 +153,7 @@ git clone --recursive your/repo/url # --recursive flag is very important!
 > `--recursive` flag is very important!
 
 ```bash
-git clone --recursive https://github.com/marcobarilari/layerfMRI-toolbox.git
+git clone --recursive https://github.com/marcobarilari/layer-MAP.git
 ```
 
 1. Check you have all the requirements listed in this README file
