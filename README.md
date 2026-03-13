@@ -36,9 +36,9 @@ The layer-MAP helps with two main streams of data analyses:
 * Preprocess VASO data (motion correction `AFNI`; bold correction `LAYNII`, T1w image from `nulled` contrast `AFNI`)
 * Quality metrics (`LAYNII`) as tSNR, noise distribution etc.
 
-If you have used this toolbox or you find it useful somehow, please cite it as follow:
+If you have used this toolbox or you find it useful somehow, please cite it as follows:
 
-Barilari, M., Koiso, K., Taylor, P., Gulban, O. F., Glen, D., Bandettini, P., collignon, . olivier ., & Huber, L. (2026). layer-MAP (Modular Analysis Pipeline) (0.2.0). Zenodo. https://doi.org/10.5281/zenodo.18937199
+Barilari, M., Koiso, K., Taylor, P., Gulban, O. F., Glen, D., Bandettini, P., Collignon, Olivier, & Huber, L. (2026). layer-MAP (Modular Analysis Pipeline) (0.2.0). Zenodo. https://doi.org/10.5281/zenodo.18937199
 
 ```
 @software{barilari_2026_18937199,
