@@ -1,7 +1,7 @@
 function run_presurfer_biasfieldcorr(imag_to_correct)
 
     % Run SPM12 biasfield correction using `presurfer` that is a git submodule
-    % in `layerfMRI-toolbox/lib/presurfer`
+    % in `layer-MAP/lib/presurfer`
 
     % initialize presurfer
     this_dir = fileparts(mfilename('fullpath'));

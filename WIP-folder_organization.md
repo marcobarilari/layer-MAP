@@ -83,11 +83,11 @@ cons: too many subfolder after derivatives
 ## Derivatives option 1
 
 pros: folder structure is much less convolutes
-cons: folders will get really heavy adn in case one wants to use datalad/git-annex at the level of `layerfMRI-toolbox` this will be too big to be easily handled by datalad/git-annex
+cons: folders will get really heavy adn in case one wants to use datalad/git-annex at the level of `layer-MAP` this will be too big to be easily handled by datalad/git-annex
 
 ```bash
 └── derivatives
-    └── layerfMRI-toolbox
+    └── layer-MAP
         ├── logfiles
         ├── sub-01
         |   ├── sub-01_qm_report.html   # quality metrics report for the data propcessed w/o nordic filtering

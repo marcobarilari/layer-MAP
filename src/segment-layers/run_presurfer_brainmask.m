@@ -1,7 +1,7 @@
 function run_presurfer_brainmask(INV2)
 
     % Run denoising using `presurfer` that is a git submodule
-    % in `layerfMRI-toolbox/lib/presurfer`
+    % in `layer-MAP/lib/presurfer`
 
     % initialize presurfer
     this_dir = fileparts(mfilename('fullpath'));

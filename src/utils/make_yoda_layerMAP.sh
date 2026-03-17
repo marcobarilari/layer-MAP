@@ -27,8 +27,8 @@ mkdir -p $yoda_dir/$yoda_name/code/src
 mkdir -p $yoda_dir/$yoda_name/inputs/raw
 mkdir -p $yoda_dir/$yoda_name/outputs/derivatives
 
-# clone the layerfMRI-toolbox
-git clone --recursive https://github.com/marcobarilari/layerfMRI-toolbox.git $yoda_dir/$yoda_name/code/lib/layerfMRI-toolbox
+# clone the layer-MAP
+git clone --recursive https://github.com/marcobarilari/layer-MAP.git $yoda_dir/$yoda_name/code/lib/layer-MAP
 
 echo ""
 echo " *** ready to use the YODA $yoda_name folder is"

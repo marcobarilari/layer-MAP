@@ -1,4 +1,4 @@
-## layerfMRI-toolbox PIPELINE - STRUCTURAL TISSUE SEGMENTATION AND LAYERS DEFINITION
+## layer-MAP PIPELINE - STRUCTURAL TISSUE SEGMENTATION AND LAYERS DEFINITION
 
 
 # This script is a demo of the layerfMRI pipeline for the segmentation
@@ -23,7 +23,7 @@ ses=ses-${sesID}
 raw_dir=${root_dir}/inputs/raw
 deriv_dir=${root_dir}/outputs/derivatives
 code_dir=${root_dir}/code
-export layerfMRI_toolbox_dir=${code_dir}/lib/layerfMRI-toolbox
+export layerfMRI_toolbox_dir=${code_dir}/lib/layer-MAP
 
 export layerfMRI_logfiles_dir=${deriv_dir}/layerfMRI-logfiles/${subj}
 lfmri_fs_seg_dir=${deriv_dir}/layerfMRI-segmentation
@@ -32,7 +32,7 @@ lfmri_layers_dir=${deriv_dir}/layerfMRI-layers
 
 ## Configure the layerfMRI pipeline (open this script to input your
 ## paths and preferences)
-source ${code_dir}/lib/layerfMRI-toolbox/config_layerfMRI_pipeline.sh 
+source ${code_dir}/lib/layer-MAP/config_layerfMRI_pipeline.sh 
 
 # start logging mRAM memory and CPU usage (change to specific user name)
 # mem_cpu_logger.sh start marcobarilari
@@ -55,7 +55,7 @@ inv2_image=${anat_dir}/${subj}_${ses}_acq-r0p75_inv-2_MP2RAGE.nii
 $matlabpath -nodisplay -nosplash -nodesktop                                   \
     -r "UNIT1='$UNIT1_image';                                                 \
     INV2='$inv2_image';                                                       \
-    addpath(genpath(fullfile('$code_dir','lib','layerfMRI-toolbox','src')));  \
+    addpath(genpath(fullfile('$code_dir','lib','layer-MAP','src')));  \
     run_presurfer_denoise(UNIT1, INV2);                                       \
     exit"
 
@@ -65,7 +65,7 @@ UNIT1_image=${anat_dir}/presurf_MPRAGEise/${subj}_${ses}_acq-r0p75_UNIT1_MPRAGEi
 
 $matlabpath -nodisplay -nosplash -nodesktop                                   \
     -r "UNIT1='$UNIT1_image';                                                 \
-    addpath(genpath(fullfile('$code_dir','lib','layerfMRI-toolbox','src')));  \
+    addpath(genpath(fullfile('$code_dir','lib','layer-MAP','src')));  \
     run_presurfer_biasfieldcorr(UNIT1); \
     exit"
 
@@ -79,7 +79,7 @@ echo "++ Run freesurfer recon-all"
 
 $matlabpath -nodisplay -nosplash -nodesktop \
     -r "INV2='$inv2_image'; \
-    addpath(genpath(fullfile('$code_dir', 'lib', 'layerfMRI-toolbox', 'src'))); \
+    addpath(genpath(fullfile('$code_dir', 'lib', 'layer-MAP', 'src'))); \
     run_presurfer_brainmask(INV2); \
     exit"
 
