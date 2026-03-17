@@ -6,10 +6,10 @@ logfile_name=$1
 shift 2
 command_to_run="$@"
 
-mkdir -p $layerfMRI_logfiles_dir
+mkdir -p $layerMAP_logfiles_dir
 
 now=`date +"%Y%m%d%H%M%S"`
-logfile=${layerfMRI_logfiles_dir}/${now}_${logfile_name}.txt
+logfile=${layerMAP_logfiles_dir}/${now}_${logfile_name}.txt
 
 echo $logfile
 

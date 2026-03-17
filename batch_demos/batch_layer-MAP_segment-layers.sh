@@ -1,14 +1,14 @@
 ## layer-MAP PIPELINE - STRUCTURAL TISSUE SEGMENTATION AND LAYERS DEFINITION
 
 
-# This script is a demo of the layerfMRI pipeline for the segmentation
+# This script is a demo of the layerMAP pipeline for the segmentation
 # and layers for 1 subject only
 
 # ver = 1.0
 # ============================================================================
 
 ## Set up the YODA folder path (YODA see the docs )
-export root_dir=/mnt/HD_jupiter/marcobarilari/sandbox/sandbox_layerfMRI-pipeline
+export root_dir=/mnt/HD_jupiter/marcobarilari/sandbox/sandbox_layerMAP-pipeline
 
 ## Select subject and session
 
@@ -23,16 +23,16 @@ ses=ses-${sesID}
 raw_dir=${root_dir}/inputs/raw
 deriv_dir=${root_dir}/outputs/derivatives
 code_dir=${root_dir}/code
-export layerfMRI_toolbox_dir=${code_dir}/lib/layer-MAP
+export layerMAP_toolbox_dir=${code_dir}/lib/layer-MAP
 
-export layerfMRI_logfiles_dir=${deriv_dir}/layerfMRI-logfiles/${subj}
-lfmri_fs_seg_dir=${deriv_dir}/layerfMRI-segmentation
-lfmri_mesh_dir=${deriv_dir}/layerfMRI-surface-mesh
-lfmri_layers_dir=${deriv_dir}/layerfMRI-layers
+export layerMAP_logfiles_dir=${deriv_dir}/layerMAP-logfiles/${subj}
+lfmri_fs_seg_dir=${deriv_dir}/layerMAP-segmentation
+lfmri_mesh_dir=${deriv_dir}/layerMAP-surface-mesh
+lfmri_layers_dir=${deriv_dir}/layerMAP-layers
 
-## Configure the layerfMRI pipeline (open this script to input your
+## Configure the layerMAP pipeline (open this script to input your
 ## paths and preferences)
-source ${code_dir}/lib/layer-MAP/config_layerfMRI_pipeline.sh 
+source ${code_dir}/lib/layer-MAP/config_layerMAP_pipeline.sh 
 
 # start logging mRAM memory and CPU usage (change to specific user name)
 # mem_cpu_logger.sh start marcobarilari

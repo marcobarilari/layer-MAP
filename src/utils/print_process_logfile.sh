@@ -7,7 +7,7 @@
 
 logfile_name=$1
 
-mkdir -p $layerfMRI_logfiles_dir
+mkdir -p $layerMAP_logfiles_dir
 
 if [ -z "$SCRIPT_LOG_FILE" ]
 then 
@@ -15,7 +15,7 @@ then
     var=`date +"%FORMAT_STRING"`
     now=`date +"%Y%m%d%H%M%S"`
 
-    logfile=${layerfMRI_logfiles_dir}/${now}_${logfile_name}.txt
+    logfile=${layerMAP_logfiles_dir}/${now}_${logfile_name}.txt
 
     # Redirect stdout (standard output) and stderr (standard error) to the log file
     # exec > $logfile 2>&1

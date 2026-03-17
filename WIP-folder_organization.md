@@ -18,17 +18,17 @@ cons: the structure might not make sense in a bids derivatives fashion after sub
 
 ```bash
 └── derivatives
-    ├── layerfMRI-logfiles
+    ├── layerMAP-logfiles
     │   ├── sub-01
     │   └── sub-02
-    └── layerfMRI-segmentation-layer
+    └── layerMAP-segmentation-layer
     │   ├── sub-01
     │   │   ├── SUMA
     │   │   ├── freesurfer
     │   │   └── rim-layers
     │   └── sub-02
     │       ├[...]
-    └── layerfMRI-preprocessing
+    └── layerMAP-preprocessing
         ├── sub-01
         │   ├── moco
         │   ├── boco
@@ -48,7 +48,7 @@ cons: too many subfolder after derivatives
 
 ```bash
 └── derivatives
-    └── layerfMRI-segmentation
+    └── layerMAP-segmentation
     |   ├── logfiles
     │   │   ├── sub-01
     │   │   └── sub-02
@@ -57,17 +57,17 @@ cons: too many subfolder after derivatives
     │   │   └── presurf_MPRAGEise
     │   └── sub-02
     │       ├[...]
-    └── layerfMRI-surface-mesh
+    └── layerMAP-surface-mesh
     │   ├── sub-01
     │   │   └──  SUMA
     │   └── sub-02
     │       ├[...]
-    └── layerfMRI-rim-layers
+    └── layerMAP-rim-layers
     │   ├── sub-01
     │   │   └──  roi
     │   └── sub-02
     │       ├[...]
-    └── layerfMRI-preprocessing
+    └── layerMAP-preprocessing
         ├── sub-01
         │   ├── moco
         │   ├── boco

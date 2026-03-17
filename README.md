@@ -15,7 +15,7 @@ __________(_ / _____________________________________________
 
 # layer-MAP (Modular Anlaysis Pipeline) v0.2.0 - BETA*
 
-*formerly known as layerfMRI - toolbox*
+*formerly known as layer-MAP - toolbox*
 
 (*) new commits will break the code very often
 
@@ -131,7 +131,7 @@ This is the expected folder structure
 ```bash
 # output structure
 
-`analyses_layerfMRI_your-project-name`
+`analyses_your-project-name`
     .
     ├── code
     │   ├── lib # where layer-MAP lives
@@ -174,7 +174,7 @@ git clone --recursive https://github.com/marcobarilari/layer-MAP.git
 ```
 
 1. Check you have all the requirements listed in this README file
-2. Check the config file `config_layerfMRI_pipeline.sh` and modify it according to your software paths.
+2. Check the config file `config_layer-MAP_pipeline.sh` and modify it according to your software paths.
 3. Check the demos for suggested pipelines in the `batch demos` (and check paths there as well if you intend to use them).
 
 ## How to use it
@@ -201,7 +201,7 @@ RAM and CPU usage are sampled every ~30 seconds.
 
 ### From high-res anatomical to whole brain layers
 
-This section refers to the demo `layerfMRI_pipeline_segment-layers.sh` using a high-res anatomical MP2RAGE whole brain (0.75 mm iso) and T1w in EPI space derived from vaso functional data of a specific task experiment (0.75 mm iso, partial brain coverage).
+This section refers to the demo `layer-MAP_pipeline_segment-layers.sh` using a high-res anatomical MP2RAGE whole brain (0.75 mm iso) and T1w in EPI space derived from vaso functional data of a specific task experiment (0.75 mm iso, partial brain coverage).
 
 ![image info](./src/benchmark/ram.png)
 
